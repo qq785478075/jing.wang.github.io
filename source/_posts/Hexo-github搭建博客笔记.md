@@ -99,4 +99,12 @@ deploy:
 > ssh-keygen -t rsa -C "xxx@xxx.com"
 
 
-
+#  备份分支源文件
+``` html
+//git 文件添加
+git add .
+//git 提交
+git commit -m "init"
+//push到hexo分支
+git push origin hexo
+```
