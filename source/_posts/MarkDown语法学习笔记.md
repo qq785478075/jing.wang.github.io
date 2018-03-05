@@ -9,7 +9,7 @@ categories: 笔记
 
 <!--more-->
 
-# Markdown 标题支持两种形式：
+# 标题
 
 1. 用#标记
 > 在 标题开头 加上1~6个#，依次代表一级标题、二级标题....六级标题
@@ -76,8 +76,10 @@ ___
 
 #图片与链接
 
-图片为：![Alt text](/path/to/img.jpg "Optional title")
-
+图片为:
+``` html5
+	![Alt text](/path/to/img.jpg "Optional title")
+```
 * Alt text 为如果图片无法显示时显示的文字
 * /path/to/img.jpg 为图片所在路径 路径可以使用绝对路径也可以使用相对路径，建议使用绝对路径
 * Optional title 显示标题。显示效果为在你将鼠标放到图片上后，会显示一个小框提示，提示内容就是Option title 里的内容
@@ -90,8 +92,17 @@ ___
 	<img/>
 </div>
 ```
-* 链接为： []()
+* 链接为：
+``` html5
+	[]()
+```
 
 
 # 换行
+``` html5
+	<br>
+```
 
+
+
+	
