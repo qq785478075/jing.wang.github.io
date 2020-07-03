@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-03T05:37:01.129Z</updated>
+  <updated>2020-07-03T05:42:22.777Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>Hexo 错误记录</title>
-    <link href="http://yoursite.com/2020/03/02/hexo%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/"/>
-    <id>http://yoursite.com/2020/03/02/hexo错误记录/</id>
+    <link href="http://yoursite.com/hexo%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/hexo错误记录/</id>
     <published>2020-03-02T07:16:17.000Z</published>
-    <updated>2020-07-03T05:37:01.129Z</updated>
+    <updated>2020-07-03T05:42:22.777Z</updated>
     
-    <content type="html"><![CDATA[<p> Hexo 错误记录<br><a id="more"></a></p><p>大致错误如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be integer. Receivedan instance of Object</span><br></pre></td></tr></table></figure></p><p><img src="/images/1593746937.jpg" alt></p><p>在百度多次搜索、验证，验证找到错误原因为node.js版本太高导致，但是自己又不想卸载原本的nodejs版本，所以在网上找了个叫 <a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener"><font color="red">nvm</font></a> 的工具降低 node的版本；完美解决此次错误</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Error: ERROR: The key you are authenticating with has been marked as read only.</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure><p><img src="/images/1593748047(1" alt>.jpg)<br><img src="/images/2020-07-03_132647.png" alt></p><p>在配置ssh key文件时勾选上<font color="red">Allow write access</font> 选项</p>]]></content>
+    <content type="html"><![CDATA[<p> Hexo 错误记录<br><a id="more"></a></p><p>大致错误如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be integer. Receivedan instance of Object</span><br></pre></td></tr></table></figure></p><p><img src="/images/1593746937.jpg" alt></p><p>在百度多次搜索、验证，验证找到错误原因为node.js版本太高导致，但是自己又不想卸载原本的nodejs版本，所以在网上找了个叫 <a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener"><font color="red">nvm</font></a> 的工具降低 node的版本；接下来就可以 <font color="red">hexo g -d</font>  完美解决此次错误</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Error: ERROR: The key you are authenticating with has been marked as read only.</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure><p><img src="/images/1593748047(1" alt>.jpg)<br><img src="/images/2020-07-03_132647.png" alt></p><p>在配置ssh key文件时勾选上<font color="red">Allow write access</font> 选项</p>]]></content>
     
     <summary type="html">
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>gulp添加版本功能笔记</title>
-    <link href="http://yoursite.com/2018/04/14/gulp%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9C%AC%E5%8A%9F%E8%83%BD%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/04/14/gulp添加版本功能笔记/</id>
+    <link href="http://yoursite.com/gulp%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9C%AC%E5%8A%9F%E8%83%BD%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/gulp添加版本功能笔记/</id>
     <published>2018-04-14T00:57:16.000Z</published>
     <updated>2020-07-03T02:59:28.101Z</updated>
     
@@ -66,8 +66,8 @@
   
   <entry>
     <title>Glup学习笔记</title>
-    <link href="http://yoursite.com/2018/03/02/Glup%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/03/02/Glup学习笔记/</id>
+    <link href="http://yoursite.com/Glup%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/Glup学习笔记/</id>
     <published>2018-03-02T07:16:17.000Z</published>
     <updated>2020-07-03T02:59:28.100Z</updated>
     
@@ -90,12 +90,12 @@
   
   <entry>
     <title>Hexo 多台电脑配置</title>
-    <link href="http://yoursite.com/2018/03/02/Hexo%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2018/03/02/Hexo多台电脑配置/</id>
+    <link href="http://yoursite.com/Hexo%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/Hexo多台电脑配置/</id>
     <published>2018-03-02T07:16:17.000Z</published>
-    <updated>2020-07-03T03:11:27.866Z</updated>
+    <updated>2020-07-03T06:11:29.754Z</updated>
     
-    <content type="html"><![CDATA[<p>Hexo 多台电脑配置<br><a id="more"></a></p>]]></content>
+    <content type="html"><![CDATA[<p>Hexo 多台电脑配置<br><a id="more"></a></p><p>在之前的一篇文章中描述了<a href="/Hexo-github搭建博客笔记/#more"><font color="red">Hexo 加 github搭建</font></a>怎么搭建个人博客的文章</p>]]></content>
     
     <summary type="html">
     
@@ -114,8 +114,8 @@
   
   <entry>
     <title>MarkDown语法学习笔记</title>
-    <link href="http://yoursite.com/2018/02/28/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/02/28/MarkDown语法学习笔记/</id>
+    <link href="http://yoursite.com/MarkDown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/MarkDown语法学习笔记/</id>
     <published>2018-02-28T06:03:05.000Z</published>
     <updated>2020-07-03T02:59:28.100Z</updated>
     
@@ -136,8 +136,8 @@
   
   <entry>
     <title>Hexo+github搭建博客笔记</title>
-    <link href="http://yoursite.com/2018/02/28/Hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/02/28/Hexo-github搭建博客笔记/</id>
+    <link href="http://yoursite.com/Hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/Hexo-github搭建博客笔记/</id>
     <published>2018-02-28T03:48:43.000Z</published>
     <updated>2020-07-03T02:59:28.100Z</updated>
     
