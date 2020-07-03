@@ -1,8 +1,8 @@
 ---
 title: Hexo 错误记录
 date: 2020-03-02 15:16:17
-tags: [gulp] 
-categories: [笔记,hexo]
+tags: [hexo] 
+categories: [hexo]
 comments: false
 ---
 

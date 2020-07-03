@@ -2,7 +2,7 @@
 title: gulp添加版本功能笔记
 date: 2018-04-14 08:57:16
 tags: [gulp] 
-categories: [笔记,打包工具]
+categories: [打包工具]
 comments: false
 ---
 

@@ -2,7 +2,7 @@
 title: Glup学习笔记
 date: 2018-03-02 15:16:17
 tags: [gulp] 
-categories: [笔记,打包工具]
+categories: [打包工具]
 comments: false
 ---
 
