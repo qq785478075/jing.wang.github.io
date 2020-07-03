@@ -17,7 +17,7 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be integer. Receiveda
 ```
 ![](/images/1593746937.jpg)
 
-在百度多次搜索、验证，验证找到错误原因为node.js版本太高导致，但是自己又不想卸载原本的nodejs版本，所以在网上找了个叫 [<font color="red">nvm</font>](https://github.com/coreybutler/nvm-windows) 的工具降低 node的版本；完美解决此次错误
+在百度多次搜索、验证，验证找到错误原因为node.js版本太高导致，但是自己又不想卸载原本的nodejs版本，所以在网上找了个叫 [<font color="red">nvm</font>](https://github.com/coreybutler/nvm-windows) 的工具降低 node的版本；接下来就可以 <font color="red">hexo g -d</font>  完美解决此次错误
 
 ```html
 Error: ERROR: The key you are authenticating with has been marked as read only.

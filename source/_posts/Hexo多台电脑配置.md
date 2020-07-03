@@ -8,3 +8,5 @@ comments: false
 
 Hexo 多台电脑配置
 <!--more-->
+
+在之前的一篇文章中描述了[<font color="red">Hexo 加 github搭建</font>](/Hexo-github搭建博客笔记/#more)怎么搭建个人博客的文章
