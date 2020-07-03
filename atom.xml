@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-03T05:33:43.027Z</updated>
+  <updated>2020-07-03T05:37:01.129Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,13 @@
     <link href="http://yoursite.com/2020/03/02/hexo%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/"/>
     <id>http://yoursite.com/2020/03/02/hexo错误记录/</id>
     <published>2020-03-02T07:16:17.000Z</published>
-    <updated>2020-07-03T05:33:43.027Z</updated>
+    <updated>2020-07-03T05:37:01.129Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><p>大致错误如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be integer. Receivedan instance of Object</span><br></pre></td></tr></table></figure></p><p><img src="/images/1593746937.jpg" alt></p><p>在百度多次搜索、验证，验证找到错误原因为node.js版本太高导致，但是自己又不想卸载原本的nodejs版本，所以在网上找了个叫 <a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener"><font color="red">nvm</font></a> 的工具降低 node的版本；完美解决此次错误</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Error: ERROR: The key you are authenticating with has been marked as read only.</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure><p><img src="/images/1593748047(1" alt>.jpg)<br><img src="/images/2020-07-03_132647.png" alt></p><p>在配置ssh key文件时勾选上<font color="red">Allow write access</font> 选项</p>]]></content>
+    <content type="html"><![CDATA[<p> Hexo 错误记录<br><a id="more"></a></p><p>大致错误如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">TypeError [ERR_INVALID_ARG_TYPE]: The "mode" argument must be integer. Receivedan instance of Object</span><br></pre></td></tr></table></figure></p><p><img src="/images/1593746937.jpg" alt></p><p>在百度多次搜索、验证，验证找到错误原因为node.js版本太高导致，但是自己又不想卸载原本的nodejs版本，所以在网上找了个叫 <a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener"><font color="red">nvm</font></a> 的工具降低 node的版本；完美解决此次错误</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Error: ERROR: The key you are authenticating with has been marked as read only.</span><br><span class="line">fatal: Could not read from remote repository.</span><br></pre></td></tr></table></figure><p><img src="/images/1593748047(1" alt>.jpg)<br><img src="/images/2020-07-03_132647.png" alt></p><p>在配置ssh key文件时勾选上<font color="red">Allow write access</font> 选项</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;大致错误如下:&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class
-      
+      &lt;p&gt; Hexo 错误记录&lt;br&gt;
     
     </summary>
     
