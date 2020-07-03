@@ -6,7 +6,10 @@ categories: [笔记,hexo]
 comments: false
 ---
 
+
+ Hexo 错误记录
 <!--more-->
+
 大致错误如下:
 ```html
 FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
