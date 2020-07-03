@@ -13,8 +13,6 @@
       
       <categories>
           
-          <category> 笔记 </category>
-          
           <category> hexo </category>
           
       </categories>
@@ -40,8 +38,6 @@
       
       <categories>
           
-          <category> 笔记 </category>
-          
           <category> hexo </category>
           
       </categories>
@@ -49,7 +45,117 @@
       
         <tags>
             
-            <tag> gulp </tag>
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue-cli 3.0</title>
+      <link href="/vue-cli%203.0%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/"/>
+      <url>/vue-cli%203.0%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/</url>
+      
+        <content type="html"><![CDATA[<p>vue-cli 3.0搭建项目<br><a id="more"></a></p><p>#安装全局快速原型设计<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli-service-global</span><br></pre></td></tr></table></figure></p><p>#使用以下命令来创建新项目<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create hello-world</span><br></pre></td></tr></table></figure></p><p>如下图所示：<br><img src="/images/1593768388483.png" alt></p><p>这个默认的设置非常适合快速创建一个新项目的原型，而手动设置则提供了更多的选项，它们是面向生产的项目更加需要的。</p><p>如下图所示：<br><img src="/images/1593768385539.png" alt></p><p>选择后按回车键</p><p>如下图所示：<br><img src="/images/1593768387042.png" alt></p><p>#根目录下新建  vue.config.js 文件<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">    publicPath: process.env.NODE_ENV === 'production' ? './' : './',//部署应用包时的基础路径</span><br><span class="line">    outputDir: 'test',//生产环境构建文件的目录</span><br><span class="line">    assetsDir: '',//放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录</span><br><span class="line">    indexPath:'index.html',//指定生成的 index.html 的输出路径 (相对于 outputDir)。也可以是一个绝对路径</span><br><span class="line">    filenameHashing:true,//生成的静态资源文件名中包含了是否 hash</span><br><span class="line">    transpileDependencies:[],//如果你想要通过 Babel 显式转译一个依赖，可以在这个选项中列出来</span><br><span class="line">    productionSourceMap:false,//是否需要map文件</span><br><span class="line">    css:&#123;</span><br><span class="line">        modules:true,//是否允许css预处理（scss|sass|less|styl）文件</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+          <category> vue3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue使用swiper实现轮播</title>
+      <link href="/vue%E4%BD%BF%E7%94%A8swiper%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD/"/>
+      <url>/vue%E4%BD%BF%E7%94%A8swiper%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD/</url>
+      
+        <content type="html"><![CDATA[<p>vue使用swiper实现轮播<br><a id="more"></a><br><a href="http://www.swiper.com.cn/demo/index.html" target="_blank" rel="noopener">swiper官网</a></p><p>#第一步：安装swiper<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save swiper</span><br></pre></td></tr></table></figure></p><p>#第二步：写template<br>案例：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-container"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-wrapper"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-slide"</span> <span class="attr">v-for</span>=<span class="string">"str in listImg"</span> <span class="attr">:style</span>=<span class="string">"&#123; backgroundImage: 'url(' + str.url + ')' &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"swiper-pagination-bullet"</span> <span class="attr">v-for</span>=<span class="string">"str in listImg"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">import Swiper from 'swiper'</span><br><span class="line">    import 'swiper/dist/css/swiper.min.css'</span><br><span class="line">    import a from '../assets/benner/yichihei.jpg'</span><br><span class="line">    import b from '../assets/benner/yixihei.jpg'</span><br><span class="line">export default&#123;</span><br><span class="line">mounted() &#123;</span><br><span class="line">var mySwiper = new Swiper('.swiper-container',&#123;</span><br><span class="line">pagination: &#123;//分页器</span><br><span class="line">    el: '.swiper-pagination',</span><br><span class="line">    type: 'bullets',//分页器样式</span><br><span class="line">    clickable :true//是否可以点击</span><br><span class="line">  &#125;,</span><br><span class="line">loop: true,//无限轮播</span><br><span class="line">                speed: 600,//平滑的速度</span><br><span class="line">autoplay:true//自动轮播滑动</span><br><span class="line">&#125;)</span><br><span class="line">       &#125;,</span><br><span class="line">       data()&#123;</span><br><span class="line">       return&#123;</span><br><span class="line">       listImg:[</span><br><span class="line">       &#123;url:a&#125;,</span><br><span class="line">       &#123;url:b&#125;,</span><br><span class="line">       &#123;url:a&#125;</span><br><span class="line">       </span><br><span class="line">       ]</span><br><span class="line">       &#125;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> &gt;</span></span><br><span class="line">.swiper-container &#123;</span><br><span class="line">width: 100%;</span><br><span class="line">height: 10rem;</span><br><span class="line">margin-top: 44px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.swiper-container .swiper-wrapper &#123;</span><br><span class="line">width: 100%;</span><br><span class="line">height: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.swiper-slide &#123;</span><br><span class="line">background-position: center;</span><br><span class="line">background-size: cover;</span><br><span class="line">width: 100%;</span><br><span class="line">height: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.swiper-slide img &#123;</span><br><span class="line">width: 100%;</span><br><span class="line">height: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.swiper-pagination-bullet &#123;</span><br><span class="line">width: 0.833rem;</span><br><span class="line">height: 0.833rem;</span><br><span class="line">display: inline-block;</span><br><span class="line">background: #ff5b06;</span><br><span class="line">opacity:1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> swiper </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>类库网站、插件整理</title>
+      <link href="/%E6%8F%92%E4%BB%B6%E6%95%B4%E7%90%86/"/>
+      <url>/%E6%8F%92%E4%BB%B6%E6%95%B4%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<p>类库网站、插件整理<br><a id="more"></a><br><a href="http://www.mescroll.com/api.html#methods" target="_blank" rel="noopener">下拉加载</a><br><a href="http://www.iconfont.cn" target="_blank" rel="noopener">icon字体</a><br><a href="http://www.html5plus.org/doc/zh_cn/camera.html" target="_blank" rel="noopener">h5+</a><br><a href="https://blog.csdn.net/lx376693576/article/details/54911340" target="_blank" rel="noopener">vue配置信息</a><br><a href="https://www.cnblogs.com/calamus/p/8242446.html" target="_blank" rel="noopener">vue插件库</a><br><a href="https://wangdahoo.github.io/vonic-documents/#/?id=%E4%BB%8B%E7%BB%8D" target="_blank" rel="noopener">vue vonic样式API</a><br><a href="http://mint-ui.github.io/#!/zh-cn" target="_blank" rel="noopener">vue2 样式Api</a><br><a href="https://cnodejs.org/topic/56ef3edd532839c33a99d00e" target="_blank" rel="noopener">前端资源教程</a><br><a href="http://618cj.com/category/vue三级联动/" target="_blank" rel="noopener">vue三级联动</a><br><a href="https://segmentfault.com/a/1190000009506097" target="_blank" rel="noopener">vue完整项目介绍</a><br><a href="https://blog.csdn.net/qq_21423689/article/details/80999830" target="_blank" rel="noopener">前端组件、插件汇总</a><br><a href="http://www.wheelsfactory.cn/#/detail?id=13" target="_blank" rel="noopener">vue拖动插件</a><br><a href="https://segmentfault.com/a/1190000013090341#articleHeader3" target="_blank" rel="noopener">vue-slicksort vue拖动插件 </a><br><a href="https://github.com/jbaysolutions/vue-grid-layout/blob/HEAD/README-zh_CN.md" target="_blank" rel="noopener">vue-grid-layout 栅格布局系统</a> 光环云–大屏项目使用<br><a href="https://segmentfault.com/a/1190000009633257" target="_blank" rel="noopener">handsontable vue表格控件</a><br><a href="https://www.cnblogs.com/starof/p/4968769.html" target="_blank" rel="noopener">动画</a><br><a href="http://www.clipboardjs.cn/" target="_blank" rel="noopener">复制粘贴插件</a><br><a href="https://github.com/yeild/jigsaw" target="_blank" rel="noopener">vue 滑块验证</a><br><a href="https://github.com/boenfu/vuex-along" target="_blank" rel="noopener">vuex 页面刷新状态管理数据保存</a><br><a href="https://garveyzuo.github.io/easyscroll.github.io/#/" target="_blank" rel="noopener">vue滚动条样式优化插件</a><br><a href="https://developer.apple.com/account/ios/device/" target="_blank" rel="noopener">苹果测试平台连接</a><br><a href="https://fir.im/apps/5ab0d06fca87a8615c91b703" target="_blank" rel="noopener">苹果内测平台</a><br><a href="https://www.pgyer.com/udid" target="_blank" rel="noopener"> 获取苹果用户的UDID</a><br><a href="https://lodash.com/" target="_blank" rel="noopener">lodash</a><br><a href="https://www.lodashjs.com/docs/latest" target="_blank" rel="noopener">lodash 中文版</a><br><a href="vue + element表单验证">https://aweiu.com/documents/element-ui-verify</a><br><a href="http://natappfree.cc/" target="_blank" rel="noopener"> 内网穿透</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+          <category> vue3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue2.0搭建项目</title>
+      <link href="/vue-cli%202.0%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/"/>
+      <url>/vue-cli%202.0%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/</url>
+      
+        <content type="html"><![CDATA[<p>vue2.0搭建项目说明<br><a id="more"></a><br><a href="https://cn.vuejs.org/v2/guide/installation.html" target="_blank" rel="noopener">Vue官网链接</a><br><a href="https://www.cnblogs.com/binmengxue/p/6831850.html" target="_blank" rel="noopener">Vue安装教程链接</a></p><p>目前vue 已经有了vue 3.0版本了 如需使用vue 2.0旧版本 执行以下命令：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli-init //获取vue 2.0旧版本</span><br></pre></td></tr></table></figure></p><h1 id="全局安装-vue-cli"><a href="#全局安装-vue-cli" class="headerlink" title="全局安装 vue-cli"></a>全局安装 vue-cli</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install vue  //最新稳定版</span><br><span class="line">npm install --global vue-cli</span><br></pre></td></tr></table></figure><h1 id="创建一个基于-webpack-模板的新项目"><a href="#创建一个基于-webpack-模板的新项目" class="headerlink" title="创建一个基于 webpack 模板的新项目"></a>创建一个基于 webpack 模板的新项目</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack my-project</span><br><span class="line"> Project name  //项目名称</span><br><span class="line"> Project description  //项目描述</span><br><span class="line"> Author //作者</span><br><span class="line"> Vue build  //vue的建立</span><br><span class="line"> Install vue-router?   //安装vue路由</span><br><span class="line"> Use ESLint to lint your code？  //该选项为使用ESLint规范你的代码，一个空格错误都将报错，不开启，避免不必要的麻烦</span><br><span class="line"> Set up unit tests？  //设置单元测试</span><br><span class="line"> Setup e2e tests with Nightwatch   // Nightwatch建立端到端的测试</span><br><span class="line"> Should we run `npm install` for you after the project has been created? (recommended) (Use arrow keys)  //确认创建项目</span><br></pre></td></tr></table></figure><p>如下图：<br><img src="/images/image1.png" alt></p><h1 id="安装依赖，走你"><a href="#安装依赖，走你" class="headerlink" title="安装依赖，走你"></a>安装依赖，走你</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd my-project  //跳转至my-project文件路径下</span><br><span class="line">npm install   //初始化webpack模块</span><br><span class="line">npm run dev   //启动服务器</span><br><span class="line">npm install vue-router vue-resource --save  //安装路由模块</span><br></pre></td></tr></table></figure><p>如下图：<br><img src="/images/image2.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+          <category> vue2.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
             
         </tags>
       
@@ -66,8 +172,6 @@
       
       
       <categories>
-          
-          <category> 笔记 </category>
           
           <category> 打包工具 </category>
           
@@ -93,8 +197,6 @@
       
       
       <categories>
-          
-          <category> 笔记 </category>
           
           <category> 打包工具 </category>
           
@@ -146,7 +248,7 @@
       
       <categories>
           
-          <category> 笔记 </category>
+          <category> hexo </category>
           
       </categories>
       
