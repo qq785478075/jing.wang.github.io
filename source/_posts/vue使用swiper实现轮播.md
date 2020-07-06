@@ -3,6 +3,7 @@ title: vue使用swiper实现轮播
 date: 2019-03-26 14:03:05
 tags: [vue, swiper]
 categories: [vue, 工具]
+comments: false
 ---
 
 vue使用swiper实现轮播

@@ -2,7 +2,8 @@
 title: Hexo增加搜索功能
 tags: [hexo]
 categoties: [hexo, 笔记]
-data: 2020-07-06
+date: 2020-07-06 14:03:05
+comments: false
 ---
 
 随着时间的推移，博客文章越来越多。为了方便快速找到文章，增加一个站点内的搜索功能是非常必要的。

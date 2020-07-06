@@ -3,6 +3,7 @@ title: vue2.0搭建项目
 date: 2018-05-01 14:03:05
 tags: [vue]
 categories: [vue, vue2.0]
+comments: false
 ---
 
 vue2.0搭建项目说明

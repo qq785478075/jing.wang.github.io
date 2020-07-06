@@ -3,6 +3,7 @@ title: vue-cli 3.0
 date: 2019-03-26 14:03:05
 tags: [vue]
 categories: [vue, vue3.0]
+comments: false
 ---
 
 vue-cli 3.0搭建项目
