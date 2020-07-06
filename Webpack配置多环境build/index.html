@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="webpack,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="想想光头强，想想辉泰朗，在想想汤姆猫，我有什么理由放弃。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://yoursite.com/categories/笔记/index.html">
+<meta name="description" content="用vue cli2.0 脚手架搭建的项目，脚手架默认生成 dev.env.js，prod.env.js 两个环境变量声明文件，build时默认使用 prod.env.js ，这不便于我们分别 build 测试环境和 生产环境代码">
+<meta name="keywords" content="webpack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Webpack配置多环境build">
+<meta property="og:url" content="http://yoursite.com/Webpack配置多环境build/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="想想光头强，想想辉泰朗，在想想汤姆猫，我有什么理由放弃。">
+<meta property="og:description" content="用vue cli2.0 脚手架搭建的项目，脚手架默认生成 dev.env.js，prod.env.js 两个环境变量声明文件，build时默认使用 prod.env.js ，这不便于我们分别 build 测试环境和 生产环境代码">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-07-06T07:30:50.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
-<meta name="twitter:description" content="想想光头强，想想辉泰朗，在想想汤姆猫，我有什么理由放弃。">
+<meta name="twitter:title" content="Webpack配置多环境build">
+<meta name="twitter:description" content="用vue cli2.0 脚手架搭建的项目，脚手架默认生成 dev.env.js，prod.env.js 两个环境变量声明文件，build时默认使用 prod.env.js ，这不便于我们分别 build 测试环境和 生产环境代码">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/笔记/">
+  <link rel="canonical" href="http://yoursite.com/Webpack配置多环境build/">
 
 
 
 
 
-  <title>分类: 笔记 | 我的博客</title>
+  <title>Webpack配置多环境build | 我的博客</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -279,53 +281,184 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>笔记<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Webpack配置多环境build/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王小瘦">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/MarkDown语法学习笔记/" itemprop="url">
-              
-                <span itemprop="name">MarkDown语法学习笔记</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Webpack配置多环境build</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-02-28T14:03:05+08:00" content="2018-02-28">
-          02-28
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-30T14:03:05+08:00">
+                2019-01-30
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">Webpack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>用vue cli2.0 脚手架搭建的项目，脚手架默认生成 <code>dev.env.js</code>，<code>prod.env.js</code> 两个环境变量声明文件，build时默认使用 <code>prod.env.js</code> ，这不便于我们分别 build 测试环境和 生产环境代码<br><a id="more"></a></p>
+<p>目前我们的前端项目中使用到Webpack的前提下，在 config 目录下可以看到有 dev.env.js，prod.env.js 两个环境变量声明文件，build时默认使用 prod.env.js ，这不便于我们分别 build 测试环境和 生产环境代码<br>这个声明文件内容大致如下</p>
+<h6 id="dev-env-js"><a href="#dev-env-js" class="headerlink" title="dev.env.js"></a>dev.env.js</h6><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">'use strict'</span><br><span class="line">const merge = require('webpack-merge')</span><br><span class="line">const prodEnv = require('./prod.env')</span><br><span class="line"> </span><br><span class="line">module.exports = merge(prodEnv, &#123;</span><br><span class="line">  NODE_ENV: '"development"',</span><br><span class="line">  LOGOUT_URL: '"http://sso.example.org:9999/logout"'</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>在其中声明的变量可以在我们的代码中通过 process.env.LOGOUT_URL 来引用：<br>form.action = process.env.LOGOUT_URL<br>在 build 阶段使用哪个 xxx.env.js 的声明即决定了最终build输出内容中变量的值。<br>在此我只做抛砖引玉，通过简单的扩展，添加一个自定义的 xxx.env.js 文件，并通过build命令传参来控制使用哪个文件。</p>
+<p>比如我们就缺少一个test环境的配置，具体步骤如下：</p>
+<h6 id="1、创建-config-test-env-js"><a href="#1、创建-config-test-env-js" class="headerlink" title="1、创建 config/test.env.js"></a>1、创建 config/test.env.js</h6><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">'use strict'</span><br><span class="line">module.exports = merge(prodEnv, &#123;</span><br><span class="line">  NODE_ENV: '"test"',</span><br><span class="line">  BASE_API: '"/"',</span><br><span class="line">  LOGOUT_URL: '"http://172.16.0.95/logout"'</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h6 id="2、创建-process-argv-js"><a href="#2、创建-process-argv-js" class="headerlink" title="2、创建 process-argv.js"></a>2、创建 process-argv.js</h6><p>在 build 目录创建 process-argv.js，内容如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const processArgv = process.argv.splice(2)</span><br><span class="line">module.exports = processArgv</span><br></pre></td></tr></table></figure></p>
+<p>process.argv 用于读取node xxx.js –yyy 命令的传参，比如 –yyy 即参数。但只有第一次使用会得到，再次使用则获取不到，所以单独用一个文件来存储后可多次调用。</p>
+<h6 id="3、编辑-build-build-js"><a href="#3、编辑-build-build-js" class="headerlink" title="3、编辑 build/build.js"></a>3、编辑 build/build.js</h6><p>将 <code>const spinner = ora(&#39;building for production...&#39;)</code>这行改为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const processArgv = require('./process-argv')</span><br><span class="line">if (processArgv.indexOf('--test') &gt;= 0) &#123;</span><br><span class="line">  process.env.NODE_ENV = 'test'</span><br><span class="line">&#125;</span><br><span class="line">const spinner = ora(`building for $&#123;process.env.NODE_ENV&#125;...`)</span><br></pre></td></tr></table></figure>
+<h6 id="4、编辑-build-webpack-prod-conf-js"><a href="#4、编辑-build-webpack-prod-conf-js" class="headerlink" title="4、编辑 build/webpack.prod.conf.js"></a>4、编辑 build/webpack.prod.conf.js</h6><p>将 <code>const env = require(&#39;../config/prod.env&#39;)</code> 这行改为：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let envName = 'prod'</span><br><span class="line">const processArgv = require('./process-argv')</span><br><span class="line">if (processArgv.indexOf('--test') &gt;= 0) &#123;</span><br><span class="line">  envName = 'test'</span><br><span class="line">&#125;</span><br><span class="line">console.log(`building $&#123;envName&#125;`)</span><br><span class="line">const env = require(`../config/$&#123;envName&#125;.env`)</span><br></pre></td></tr></table></figure>
+<h6 id="5、package-json-增加命令"><a href="#5、package-json-增加命令" class="headerlink" title="5、package.json 增加命令"></a>5、package.json 增加命令</h6><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//...</span><br><span class="line">"scripts": &#123;</span><br><span class="line">  "test-build": "node build/build.js --test",</span><br><span class="line">&#125;,</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>即执行 node build/build.js –test，代表 –test 参数指定了使用 build/test.env.js 作为环境变量声明。<br>不指定时，则默认仍然是prod。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/webpack/" rel="tag"># webpack</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/vue-cli 2.0搭建项目/" rel="next" title="vue2.0搭建项目">
+                <i class="fa fa-chevron-left"></i> vue2.0搭建项目
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/插件整理/" rel="prev" title="类库网站、插件整理">
+                类库网站、插件整理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -353,8 +486,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -426,6 +568,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#dev-env-js"><span class="nav-number">1.</span> <span class="nav-text">dev.env.js</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#1、创建-config-test-env-js"><span class="nav-number">2.</span> <span class="nav-text">1、创建 config/test.env.js</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2、创建-process-argv-js"><span class="nav-number">3.</span> <span class="nav-text">2、创建 process-argv.js</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3、编辑-build-build-js"><span class="nav-number">4.</span> <span class="nav-text">3、编辑 build/build.js</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#4、编辑-build-webpack-prod-conf-js"><span class="nav-number">5.</span> <span class="nav-text">4、编辑 build/webpack.prod.conf.js</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5、package-json-增加命令"><span class="nav-number">6.</span> <span class="nav-text">5、package.json 增加命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -573,6 +731,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
