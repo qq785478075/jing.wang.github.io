@@ -16,3 +16,21 @@ react 学习笔记之 中间件
 同步的情况下一切都很完美，但是reducer无法处理异步的情况。
 例如：我希望点击一个按钮，2秒之后更新视图，显示消息 “Hi”。
 那么我们就需要在action 和 reducer之间架起一座桥梁来处理异步。
+
+
+# Redux异步流
+
+### redux-thunk:
+store.disptch 参数可以是一个 function
+
+#### 使用方法：
+
+1. 引入
+
+```html
+ import thunk from 'redux-thunk'
+```
+
+2. 加入中间件
+
+const store = createStore(fetchReducer,applyMiddleware(thunk))
